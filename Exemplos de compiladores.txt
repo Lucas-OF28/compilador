@@ -1,0 +1,87 @@
+1) void main { inicio; fim }(Funciona)
+
+
+
+3)void main { 
+inicio $jao = 2; fim }(erro semantico)
+
+4)void main {
+void $jao {
+inicio;fim return() } inicio;fim} (Funciona)
+
+5)void main {
+float $jao {
+inicio;fim return(2) } inicio;fim} (Funciona)
+
+6)void main {
+float $jao {
+$mano : float;
+inicio;fim return(2) } inicio;fim} (Funciona)
+
+7) void main {
+float $jao {
+$mano : float;
+inicio;fim return($mano) } inicio;fim} (Funciona)
+
+8) void main {
+float $jao {
+$mano : float;
+inicio
+$mano = 5;
+fim return($mano) }
+inicio;
+fim} (ERRO SEMANTICO - APENAS UM TIPO DE VARIAVEL)
+
+9)void main { 
+
+integer  $funcao{
+$variavel7 : integer;
+
+inici $variavel7 = 50 +7;
+fim
+return($variavel7)
+}
+
+inicio
+
+; fim}(ERRO SINTATICO)
+
+10)void main {
+float $media ( float;float ) {
+inicio
+$media = $notaum + $notadois ;
+fim
+return ($media) }
+inicio
+cout << %legal%;
+fim
+}(ERRO SEMANTICO - VARIAVEL NÃO DECLARADA)
+
+11)void main { 
+$variavel4 , $variavel2: integer;
+integer  $funcao{
+$variavel5 : integer;
+
+inicio $variavel5 = 50;
+fim
+return(0)
+}
+
+inicio
+
+; fim} (FUNCIONANDO)
+
+
+11)void main { 
+
+integer  $funcao{
+$variavel7 : integer;
+
+inicio $variavel7 = 50 +7;
+fim
+return($variavel7)
+}
+
+inicio
+
+; fim} (FUNCIONANDO)
